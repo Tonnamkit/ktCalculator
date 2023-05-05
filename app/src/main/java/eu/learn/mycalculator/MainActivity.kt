@@ -48,6 +48,32 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    fun onEqual(view: View){
+        if (lastNumeric){
+            var tvValue = tvinput?.text.toString()
+            var prefix = ""
+            try {
+                if (tvValue.startsWith("-")){
+                    prefix = "-"
+                    tvValue = tvValue.substring(1)
+                }
+
+                if (tvValue.contains("-")) {
+                    val splitValue = tvValue.split("-")
+                    var one = splitValue[0]
+                    var two = splitValue[1]
+
+                    if (prefix.isNotBlank()){
+                        one = prefix + one
+                    }
+                    tvinput?.text = (one.toDouble() - two.toDouble()).toString()
+                }
+            }catch (e: ArithmeticException){
+                e.printStackTrace()
+            }
+        }
+    }
+
     private fun isOperationAdded(value : String) : Boolean{
         return if (value.startsWith("-")){
             false
