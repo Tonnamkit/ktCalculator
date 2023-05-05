@@ -178,13 +178,14 @@
 
             />
         <Button
-            android:id="@+id/btnClear"
+            android:id="@+id/btnDot"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/clear"
+            android:text="@string/_dot"
+            android:onClick="onDecimalPoint"
             android:layout_margin="2dp"
-            android:onClick="onClear"
+
             />
         <Button
             android:id="@+id/btnPlus"
@@ -217,7 +218,15 @@
             android:layout_margin="2dp"
 
             />
-
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/clear"
+            android:layout_margin="2dp"
+            android:onClick="onClear"
+            />
 
 
 
