@@ -222,7 +222,14 @@
             android:layout_weight="1"
             android:onClick="onClear"
             android:text="@string/clear" />
-
+        <Button
+            android:id="@+id/btnRemove"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:onClick="onRemove"
+            android:text="@string/_remove" />
 
     </LinearLayout>
 

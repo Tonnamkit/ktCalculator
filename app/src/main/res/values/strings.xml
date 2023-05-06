@@ -18,4 +18,5 @@
     <string name="plus">+</string>
     <string name="_equal">=</string>
     <string name="_dot">.</string>
+    <string name="_remove">REMOVE</string>
 </resources>
